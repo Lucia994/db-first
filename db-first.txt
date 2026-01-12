@@ -1,16 +1,19 @@
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
 
 Table name : used_vehicle 
--id | UNSIGNED INT - PRIMARY KEY (UNIQUE NOTNULL) - AUTOINCREMENT 
--plate|(VARCHAR 255) NOTNULL - UNIQUE
--brand_car | VARCHAR (255) NOTNULL
--car_model| VARCHAR (255)  NOTNULL
--color | VARCHAR (255) NULL
--number_of_ car_chassis | VARCHAR (255) NOTNULL
--car_power_supply | VARCHAR (255) NULL
--year_of_car_registration | YEAR (YYYY) NULL
--car_mileage | MEDIUMINT  NULL
--maintenance_work_carried_out_on_cars | TEXT (1000) NULL
+
+-id                                    | UNSIGNED INT - PRIMARY KEY (UNIQUE NOTNULL) - AUTOINCREMENT 
+-plate                                 | VARCHAR (255) NOTNULL - UNIQUE
+-brand_car                             | VARCHAR (255) NOTNULL
+-car_model                             | VARCHAR (255)  NOTNULL
+-color                                 | VARCHAR (255) NULL
+-number_of_ car_chassis                | VARCHAR (255) NOTNULL
+-car_power_supply                      | VARCHAR (255) NULL
+-year_of_car_registration              | YEAR (YYYY) NULL
+-car_mileage                           | MEDIUMINT  NULL
+-maintenance_work_carried_out_on_cars  | TEXT (1000) NULL
 -information_on_possible_car_accidents | TEXT (1000) NULL
--market_value | DECIMAL (7, 2) NULL
--purchase_value | DECIMAL (7, 2) NOTNULL
+-optionals                             | TEXT (1000) NULL
+-trim_level                            | VARCHAR (255) NULL
+-market_value                          | DECIMAL (7, 2) NULL
+-purchase_value                        | DECIMAL (7, 2) NOTNULL
