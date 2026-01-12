@@ -1,15 +1,13 @@
-# db-first
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
-Cosa consegnare?
-create un file readme come fatto stamattina in classe con la struttura della tabella.
 
-## Table name : used_vehicle 
--id | BIGINT PRIMARY_KEY AUTO_INCREMENT NOTNULL UNIQUE
--plate|(CHAR 7) NOTNULL
--brand_car | VARCHAR (20) NOTNULL
--car_model| VARCHAR (20)  NOTNULL
--number_of_ car_chassis |VARCHAR (20) NOTNULL
--car_power_supply | VARCHAR (20) NULL
+Table name : used_vehicle 
+-id | UNSIGNED INT - PRIMARY KEY (UNIQUE NOTNULL) - AUTOINCREMENT 
+-plate|(VARCHAR 255) NOTNULL - UNIQUE
+-brand_car | VARCHAR (255) NOTNULL
+-car_model| VARCHAR (255)  NOTNULL
+-color | VARCHAR (255) NULL
+-number_of_ car_chassis | VARCHAR (255) NOTNULL
+-car_power_supply | VARCHAR (255) NULL
 -year_of_car_registration | YEAR (YYYY) NULL
 -car_mileage | MEDIUMINT  NULL
 -maintenance_work_carried_out_on_cars | TEXT (1000) NULL
